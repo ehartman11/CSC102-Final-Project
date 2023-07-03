@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"    content="UAT CSC102 Module_2 Assignment">
+    <!--Link the css stylesheet-->
+    <link rel="stylesheet"      href="craps.css">
+    <!--link the .js files-->
+    <script type='text/javascript' src="craps.js"></script>
+    <script type='text/javascript' src="login.js"></script>
+    <!--run the newUser function from login.js upon initialization of the DOM-->
+    <script>newUser(User)</script>
+    <!--add the title-->
+    <title>Game of Craps</title>
+</head>
+<body>
+    <!--Create a paragraph at the top of the page to house the user's name and the change password button-->
+    <p id="p"><script id="">
+            // create a function to append a text node to the paragraph node, and then run the function to display the user's name
+            // this must be run after the paragraph element has been initialized and newUser() is done executing,
+            // otherwise the User object userName [from newUser()] will not be available for use 
+            // and the paragraph node will not have been created and thus not available for appending
+            function addText(txt){
+                var para = document.getElementById("p");
+                para.append(txt);
+            }
+            addText("User:  " + User.userName);
+        </script> 
+        <button id='chg_pswd'   onclick="changePassword()"> Change Password</button>
+    </p>
+    <!--Welcome header with gifs along either side of its banner-->
+    <h1 class="headers"> Welcome!
+        <img id='spinning_dice_1' src="spinning_dice.gif"></img>
+        <img id='spinning_dice_2' src="spinning_dice.gif"></img>
+    </h1>
+    <!--Continuation of the welcome header-->
+    <h2 class="headers">Let's play some Craps!</h2>
+    <!--Create an initial button set with functionalities from craps.js-->
+    <button id='rules_btn'  onClick="showRules()">Show Rules</button>
+    <button id='play_btn'   onClick="play()">Play Game</button>
+    <button id='stats_btn'  onClick="showStats()">Show Stats</button>
+    <nav id="links">
+        <a href="../../Module_1/Mod-1/index.html" > A little about me</a><br>
+        <a href="../../Module_1/Mod-1/boards.html" > Learn a little somethin about the Computer Science Degree Program </a><br>
+        <p id='current_page'>Here > Play some Craps!</p>
+        <a href="../../Module_4/Adding_music/valid_music.html" > Try your palindrome skills here and enjoy some background music</a><br>
+        <a href="../../Module_4/Moving_image/EDP.html" > Hangout with this floating image of Keanu Reeves </a><br>
+        <a href="../../Module_5/nav.html" > If your interested in upstate NY fishing </a><br>
+        <p id="caption">Lake Lonely, Upstate NY</p>
+    </nav>
+    <footer>“What man actually needs is not a tensionless state but rather the striving and struggling for some goal worthy of him.” - Viktor Frankl</footer>    
+</body>
+</html>

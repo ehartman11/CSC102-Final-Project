@@ -1,0 +1,60 @@
+body{
+    background-image: url('lake_george.png'); 
+    background-repeat: no-repeat;
+    background-color: grey;
+}
+
+table{
+    float:right;
+    margin-left:575px;
+    margin-top: 175px;
+    background-color: rgba(128, 128, 128, 0.815);
+    border-width:2px;
+    border-color: aliceblue;
+    border-style:dotted;
+}
+
+caption{
+    background-color: rgba(128, 128, 128, 0.815);
+    border-width:2px;
+    border-color: aliceblue;
+    border-style:dotted;
+    font-size: large;
+}
+
+nav{
+    font-size: medium;
+    border-width:2px;
+    border-color: aliceblue;
+    border-style:dotted;
+}
+
+a:visited{
+    color:darkred;
+}
+
+#season{
+    width:150px;
+    text-align: center;
+}
+
+footer{
+    float:left;
+    background-color: rgba(15, 211, 211, 0.822);
+    height: 18px;
+    line-height: 18px;
+    width: 550px;
+    margin-top: -35px;
+}
+
+.season{
+    text-align: center;
+}
+
+.length{
+    text-align: center;
+}
+
+.limit{
+    text-align: center;
+}
